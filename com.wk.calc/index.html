@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/topcoat-desktop-dark.min.css"/>
+    <link id="hostStyle" rel="stylesheet" href="css/styles.css"/>
+
+    <title></title>
+    <style type="text/css">
+        body {
+            font-weight: bold;
+        }
+
+        ul, li {
+            margin:         0;
+            padding:        0;
+            border:         0;
+            font-size:      100%;
+            font:           inherit;
+            vertical-align: baseline;
+        }
+
+        ul { list-style: none; }
+
+        textarea {
+            resize:     none;
+            overflow-y: scroll;
+        }
+
+        input {
+            box-sizing: border-box;
+            display:    inline-block;
+        }
+
+        input[type=number] {
+            float:  left;
+            border: 1px solid rgba(0, 0, 0, .4);
+            height: 20px;
+            width:  55px;
+        }
+
+        input[type=text] {
+            border: 1px solid rgba(0, 0, 0, .4);
+            height: 20px;
+        }
+
+        input[type=checkbox] {
+            opacity:  1;
+            height:   20px;
+            width:    20px;
+            position: relative;
+            margin:   0;
+            padding:  0;
+        }
+
+        .main-pan {
+            margin:  auto;
+            padding: 0;
+        }
+
+        .block {
+            width:   220px;
+            margin:  2px auto;
+            display: block;
+        }
+
+        .row {
+            display: block;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .right-label {
+            display:     inline-block;
+            float:       left;
+            height:      20px;
+            overflow:    hidden;
+            box-sizing:  border-box;
+            padding-top: 3px;
+        }
+
+        #fld_val {
+            box-sizing:  border-box;
+            width:       220px;
+            height:      60px;
+            padding:     0;
+            margin:      0;
+            margin-top:  5px;
+            font-weight: bold;
+            font-size:   1.3em;
+        }
+
+        .btns {
+            position:   relative;
+            height:     20px;
+            box-sizing: border-box;
+        }
+
+        #btn_calc {
+            box-sizing: border-box;
+            float:      left;
+            width:      45px;
+        }
+
+        #btn_refrash {
+            box-sizing: border-box;
+            width:      45px;
+            overflow-x: hidden;
+        }
+
+        #btn_killCEP {
+            box-sizing: border-box;
+            width:      45px;
+            overflow-x: hidden;
+        }
+
+        #chk_round {
+            box-sizing: border-box;
+            float:      left;
+        }
+
+    </style>
+</head>
+
+<body class="hostElt main-pan">
+
+<div id="content">
+
+    <div class="block">
+        <div class="row">
+            <textarea class="hostTextarea" id="fld_val" autofocus></textarea>
+        </div>
+
+        <div class="row float-left">
+            <input id="btn_calc" class="hostButton btns" type="button" value="Calc"/>
+            <input id="chk_round" type="checkbox" title="Round"/></div>
+        <span class="right-label">Rnd</span>
+        <div class="row float-right">
+            <input id="btn_refrash" class="hostButton btns" type="button" value="Refrash"/>
+            <input id="btn_killCEP" class="hostButton btns" type="button" value="KillCEP"/>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs/CSInterface.js"></script>
+<script src="js/libs/jquery-2.0.2.min.js"></script>
+
+<script src="js/themeManager.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
