@@ -36,6 +36,23 @@
 
   }
 
+  function convert (val, convType) {
+    var C_TO_J = 4.1868 // 1 кал = 4,1868 Дж
+    var J_TO_K = 0.2388458966275 // 1 J = 0.2388458966275 cal
+    var result = '';
+    switch (convType) {
+      case 'Joules to Calories':
+        result = val * J_TO_K;
+        break;
+      case 'Calories to Joules':
+        result = val * C_TO_J;
+        break;
+      default:
+        break;
+    }
+    return result;
+  }
+
   function getChar (event) {
 
     if (event.which != 0 && event.charCode != 0) {
@@ -55,8 +72,17 @@
     (document.getElementById ('chk_round')).checked = JSON.parse (localStorage.getItem ("chk_round_val"));
 
     $ ("#btn_calc").click (function () {
-      var elem   = document.getElementById ("fld_val");
+      var elem = document.getElementById ("fld_val");
+
       elem.value = evalCalc (elem.value);
+      elem.focus ();
+    });
+
+    $ ("#btn_convert").click (function () {
+      var elem = document.getElementById ("fld_val");
+      var conv = document.getElementById ("sel_convert");
+
+      elem.value = convert (elem.value, conv.value);
       elem.focus ();
     });
 
@@ -98,9 +124,6 @@
     })
 
     $ ("#btn_refrash").click (reloadPanel);
-    $ ("#btn_killCEP").click (function () {
-      csInterface.evalScript ("killCEP()");
-    });
 
   }
 
