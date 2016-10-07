@@ -7,6 +7,7 @@ The most super-simple calculator that based on the js function eval
 #Панель расширения для Adobe CC+ Illustrator, InDesign и Photoshop
 ##Описание:
 * Простейший строковый калькулятор на основе JavaScript функции [eval](http://learn.javascript.ru/eval)
+
 ##Использование:
 * Напечатайте математическое выражение и нажмите `Calculate`<br>
 Например, выражение -112 *6 - (366,5 / 17.5) + 10.73<br>
@@ -14,11 +15,13 @@ The most super-simple calculator that based on the js function eval
 * Для перевода Джоулей в Калории и обратно:
     01. из выпадающего списка выбрать соответствующую операцию
     02. введите число и нажмите `Convert`
+    
 ##Допустимые символы:
 * Цифры
 * Десятичная точка или запятая
 * Знаки математических операций `+`, `-`, `*`, `\`
 * Методы JavaScript объекта [Math](http://javascript.ru/Math)
+
 ##Найденные ошибки:
 * Автоисправление (на этапе вычисления) запятой на точку 
 не позволяет использовать функции объекта [Math](http://javascript.ru/Math), 
