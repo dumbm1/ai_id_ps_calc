@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExtensionManifest
         Version="4.0"
-        ExtensionBundleId="com.wk.calc_wk"
-        ExtensionBundleVersion="2.2"
+        ExtensionBundleId="com.wk.calc"
+        ExtensionBundleVersion="2.3.0"
         ExtensionBundleName="calc"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Author>
@@ -18,7 +18,7 @@
         <![CDATA[The most super-simple calculator that based on the js function eval]]>
     </Abstract>
     <ExtensionList>
-        <Extension Id="com.wk.calc_wk" Version="2.2"/>
+        <Extension Id="com.wk.calc" Version="2.3.0"/>
     </ExtensionList>
     <ExecutionEnvironment>
         <HostList>
@@ -32,7 +32,7 @@
         </RequiredRuntimeList>
     </ExecutionEnvironment>
     <DispatchInfoList>
-        <Extension Id="com.wk.calc_wk">
+        <Extension Id="com.wk.calc">
             <DispatchInfo>
                 <Resources>
                     <MainPath>./index.html</MainPath>
@@ -43,18 +43,18 @@
                 </Lifecycle>
                 <UI>
                     <Type>Panel</Type>
-                    <Menu>calc_wk 2.2</Menu>
+                    <Menu>calc 2.3.0</Menu>
                     <Geometry>
                         <Size>
-                            <Height>120</Height>
+                            <Height>150</Height>
                             <Width>240</Width>
                         </Size>
                         <MinSize>
-                            <Height>120</Height>
+                            <Height>150</Height>
                             <Width>240</Width>
                         </MinSize>
                         <MaxSize>
-                            <Height>120</Height>
+                            <Height>150</Height>
                             <Width>240</Width>
                         </MaxSize>
                     </Geometry>

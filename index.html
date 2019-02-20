@@ -8,127 +8,7 @@
 
     <title></title>
     <style type="text/css">
-        body {
-          font-weight : bold;
-        }
 
-        ul, li {
-          margin         : 0;
-          padding        : 0;
-          border         : 0;
-          font-size      : 100%;
-          font           : inherit;
-          vertical-align : baseline;
-        }
-
-        ul { list-style : none; }
-
-        textarea {
-          resize     : none;
-          overflow-y : scroll;
-        }
-
-        input {
-          box-sizing : border-box;
-          display    : inline-block;
-        }
-
-        input[type=number] {
-          float  : left;
-          border : 1px solid rgba(0, 0, 0, .4);
-          height : 20px;
-          width  : 55px;
-        }
-
-        input[type=text] {
-          border : 1px solid rgba(0, 0, 0, .4);
-          height : 20px;
-        }
-
-        input[type=checkbox] {
-          opacity     : 1;
-          height      : 20px;
-          width       : 20px;
-          position    : relative;
-          margin      : 0;
-          padding     : 0;
-          margin-left : 2px;
-        }
-
-        .main-pan {
-          margin  : auto;
-          padding : 0;
-        }
-
-        .block {
-          width   : 230px;
-          margin  : 2px auto;
-          display : block;
-        }
-
-        .row {
-          display : block;
-        }
-
-        .float-left {
-          float : left;
-        }
-
-        .float-right {
-          float : right;
-        }
-
-        .right-label {
-          display     : inline-block;
-          float       : left;
-          height      : 20px;
-          overflow    : hidden;
-          box-sizing  : border-box;
-          padding-top : 3px;
-        }
-
-        #fld_val {
-          box-sizing  : border-box;
-          width       : 230px;
-          height      : 60px;
-          padding     : 0;
-          margin      : 0;
-          margin-top  : 5px;
-          font-weight : bold;
-          font-size   : 1.3em;
-        }
-
-        .btns {
-          position   : relative;
-          height     : 20px;
-          box-sizing : border-box;
-        }
-
-        #btn_calc {
-          width      : 65px;
-          box-sizing : border-box;
-          float      : left;
-        }
-
-        #btn_refrash {
-          box-sizing : border-box;
-          overflow-x : hidden;
-        }
-
-        #chk_round {
-          box-sizing : border-box;
-          float      : left;
-        }
-
-        #sel_convert {
-          height      : 20px;
-          margin-left : 2px;
-          margin-top  : 2px;
-        }
-
-        #btn_convert {
-          width : 65px;
-        }
 
 
     </style>
@@ -142,6 +22,9 @@
         <div class="row">
             <textarea class="hostTextarea" id="fld_val" autofocus></textarea>
         </div>
+        <div class="row">
+            <textarea class="hostTextarea" id="fld_result" disabled></textarea>
+        </div>
 
         <div class="row">
             <input id="btn_calc" class="hostButton btns" type="button" value="Calculate"/>
@@ -150,16 +33,15 @@
 
         <div class="row float-right">
             <input id="btn_refrash" class="hostButton btns" type="button" value="Clear field"/>
-          <!--<input id="btn_killCEP" class="hostButton btns" type="button" value="KillCEP"/>-->
         </div>
 
-        <div class="row">
+    <!--    <div class="row">
             <input id="btn_convert" class="hostButton btns" type="button" value="Convert"/>
             <select class="hostTextarea" name="convert" id="sel_convert">
                 <option>Calories to Joules</option>
                 <option>Joules to Calories</option>
             </select>
-        </div>
+        </div>-->
     </div>
 </div>
 
